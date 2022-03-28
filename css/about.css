@@ -1,0 +1,248 @@
+@import url(variables.css);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.category-one {
+  margin: 50px 20px;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+
+.category-one h1 {
+  text-align: center;
+  color: #545454;
+  text-transform: capitalize;
+}
+
+.category-one h3 {
+  color: #727272;
+  font-size: 20px;
+}
+
+.category-one h3 i {
+  margin-right: 10px;
+  color: #20bc9d;
+}
+
+.category-one p {
+  color: #949292;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.category-one .box {
+  width: 20%;
+  padding: 20px;
+  line-height: 3;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.category-one .box:hover {
+  cursor: pointer;
+}
+
+.category-one .box:hover h3 {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  color: #20bc9d;
+}
+
+section {
+  background-image: url(../images/img/aboutcompany.jpg);
+  background-size: cover;
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
+  color: #fff;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section img {
+  height: 80%;
+  margin-top: 10%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+section .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .about h1 {
+  color: #fff;
+  font-size: 35px;
+  margin-top: 70px;
+}
+
+section .about hr {
+  color: #20bc9d;
+  background-color: #20bc9d;
+  margin: auto;
+}
+
+section .about .hr-two {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  margin-top: 2px;
+}
+
+section .about ul {
+  text-transform: uppercase;
+  color: #fff;
+  list-style: none;
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+}
+
+section .about ul li {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 15px;
+  padding-top: 10px;
+  display: inline-block;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+section .about ul li:hover {
+  color: #20bc9d;
+  cursor: pointer;
+  border-top: 3px solid #20bc9d;
+  border-radius: 3px;
+}
+
+section .about ul li.selected {
+  color: #20bc9d;
+  cursor: pointer;
+  border-top: 3px solid #20bc9d;
+  border-radius: 3px;
+}
+
+section .about .skills, section .about .history, section .about .biography {
+  margin: auto;
+  padding-top: 30px;
+  font-size: 18px;
+}
+
+section .about .skills div, section .about .history div, section .about .biography div {
+  width: 400px;
+  margin: 20px 0;
+  border: 1px solid #727272;
+  position: relative;
+}
+
+section .about .skills div span, section .about .history div span, section .about .biography div span {
+  background-color: antiquewhite;
+  padding: 7px 10px;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+section .about .hidden {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 320px;
+  }
+  .container h1 {
+    font-size: 25px;
+  }
+  .container .box {
+    width: 100%;
+  }
+  section {
+    overflow: hidden;
+  }
+  section img {
+    display: none;
+  }
+  section .about {
+    width: 100%;
+    display: block;
+  }
+  section .about .skills, section .about .history, section .about .biography {
+    width: 50px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 575.98px) and (max-width: 767px) {
+  .container {
+    width: 550px;
+  }
+  .container .box {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .container .box {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .container .box {
+    width: 33.333333%;
+  }
+}
+
+@media (max-width: 1100px) {
+  section img {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

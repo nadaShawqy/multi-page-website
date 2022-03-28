@@ -1,0 +1,161 @@
+@import url(variables.css);
+
+$mainColor: #20bc9d;
+$secondColor: #888;
+
+.our-pricing-table{
+    transition: all .2s ease-in-out;
+    h1{
+        margin-top: 30px;
+        text-align: center;
+        color: $secondColor;
+    }
+    .sections{
+        display: inline-block;
+        margin:auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #666;
+        transition: all .3s ease-in-out;
+        section{
+            border: 1px solid #fff;
+            margin: auto;
+            padding: 0;
+            font-size: 20px;
+            text-align: center;
+            background-color: #F8FCFE;
+            transition: all .3s ease-in-out;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.03);
+                box-shadow: 1px 1px 5px #d2d8db inset;
+                .price{
+                    background-color: #18CFAB;
+                    border: 1px solid #18CFAB;
+                }
+                button{
+                    background-color: #18CFAB;
+                }
+            }
+        }
+        div, p{
+            border: 1px solid #fff;
+            width: 100%;
+            margin: 0 ;
+            padding: 10px 70px;
+            transition: all .3s ease-in-out;
+        }
+        .header{
+            font-size: 23px;
+            font-weight: bold;
+            position: relative;
+            img{
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 30%
+            }
+        }
+        .price{
+            color: #fff;
+            background-color: #2E4A5B;
+            border: 1px solid #2E4A5B;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            span{
+                font-size: 35px;
+                font-weight: bold;
+            }
+        }
+        .button{
+            button{
+                background-color: #2E4A5B;
+                padding: 15px;
+                width: 170px;
+                color: #fff;
+                border-radius: 5px;
+                border: none;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .container{
+        width: 400px;
+        .sections{
+            section{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media (min-width: 575.98px) and (max-width: 767px) { 
+    .container{
+        width: 550px;
+        .sections{
+            section{
+                width: 50%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 768px) { 
+    .container{
+        width: 750px;
+        .sections{
+            section{
+                width: 50%;
+                margin-bottom: 20px;
+            }
+            .header{
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 992px) {  
+    .container{
+        width: 970px;
+        .sections{
+            section{
+                width: 25%;
+            }
+            .header{
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 1200px) {  
+    .container{
+        width:1170px;
+        .container{
+            width: 750px;
+            .sections{
+                section{
+                    width: 25%
+                }
+                .header{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

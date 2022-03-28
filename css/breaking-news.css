@@ -1,0 +1,211 @@
+@import url(variables.css);
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.breaking-news {
+  text-align: center;
+}
+
+.breaking-news h1 {
+  margin-top: 30px;
+  text-align: center;
+  color: #555;
+}
+
+.breaking-news .images .container div {
+  display: inline-block;
+  background-color: #f8fcfe;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 3px;
+  box-shadow: 3px 3px 10px #888;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.breaking-news .images .container div .block {
+  position: relative;
+}
+
+.breaking-news .images .container div .block .primary {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+}
+
+.breaking-news .images .container div .block .secondary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #203E38;
+  box-shadow: none;
+  margin: 0;
+  padding: 5px;
+  color: #fff;
+}
+
+.breaking-news .images .container div p {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  left: 0;
+  padding-top: 25px;
+  bottom: 0;
+  color: #666;
+}
+
+.breaking-news .images .container div:hover {
+  box-shadow: 20px 20px 15px #888;
+}
+
+.breaking-news .images .container div:hover span {
+  color: #18CFAB;
+}
+
+.breaking-news .images .container div:hover .secondary {
+  background-color: #18CFAB;
+}
+
+section {
+  height: 300px;
+  margin-top: 50px;
+}
+
+section .one, section .two, section .three, section .four {
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+  color: #fff;
+  font-size: 22px;
+  height: 340px;
+  background-color: #20bc9d;
+}
+
+section .one .icon-frame, section .two .icon-frame, section .three .icon-frame, section .four .icon-frame {
+  background-color: transparent;
+  width: 160px;
+  border: 1px solid #666;
+  border-radius: 50%;
+  padding-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  transition: all .3s ease-in-out;
+}
+
+section .one .icon-frame .icon, section .two .icon-frame .icon, section .three .icon-frame .icon, section .four .icon-frame .icon {
+  padding: 30px 0;
+  margin: auto;
+  width: 100px;
+  margin-top: 30px;
+  border: 1px solid #666;
+  border-radius: 50%;
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+
+section .one:hover, section .two:hover, section .three:hover, section .four:hover {
+  cursor: pointer;
+}
+
+section .one:hover .icon, section .two:hover .icon, section .three:hover .icon, section .four:hover .icon {
+  transform: scale(1.2);
+}
+
+section .one:hover p, section .two:hover p, section .three:hover p, section .four:hover p {
+  font-size: 25px;
+}
+
+section .one, section .three {
+  background-color: #25333C;
+  border-top: 5px solid #20bc9d;
+}
+
+section .one .icon, section .three .icon {
+  background-color: #20bc9d;
+  transition: all .3s ease-in-out;
+}
+
+section .one .icon-frame, section .three .icon-frame {
+  border: 1px solid #20bc9d;
+  transition: all .3s ease-in-out;
+}
+
+section .one p, section .three p {
+  transition: all .3s ease-in-out;
+}
+
+section .one p span, section .three p span {
+  color: #20bc9d;
+}
+
+section .two, section .four {
+  background-color: #20bc9d;
+  border-top: 5px solid #25333C;
+}
+
+section .two .icon, section .four .icon {
+  background-color: #25333C;
+}
+
+section .two .icon-frame, section .four .icon-frame {
+  border: 1px solid #25333C;
+}
+
+section .two p span, section .four p span {
+  color: #25333C;
+}
+
+section p {
+  padding-bottom: 30px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 400px;
+  }
+  section .one, section .two, section .three, section .four {
+    width: 100%;
+  }
+}
+
+@media (min-width: 575.98px) and (max-width: 767px) {
+  .container {
+    width: 550px;
+  }
+  section .one, section .two, section .three, section .four {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

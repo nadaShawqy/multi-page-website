@@ -1,0 +1,165 @@
+@import url(variables.css);
+
+$mainColor: #20bc9d;
+$secondColor: #888;
+
+.products{
+    h1{
+        text-transform: capitalize;
+        text-align: center;
+        color: $secondColor;
+        margin-bottom: 30px;
+    }
+    section{
+        margin-top: 30px;
+        ul{
+            list-style: none;
+            margin: auto;
+            text-align: center;
+            li{
+                display: inline-block;
+                font-size: 18px;
+                margin-right: -5px;
+                text-transform: capitalize;
+                padding: 15px 20px;
+                color: #999;
+                border: 1px solid #999;
+                font-weight: bold;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    color: $mainColor;
+                    border-top: 4px solid $mainColor;
+                    cursor: pointer;
+                }
+            }
+            .active{
+                color: $mainColor;
+                border-top: 4px solid $mainColor;
+            }
+        }
+        .product{
+            margin-top: 40px;
+            text-align: center;
+            .item-box{
+                display: inline-block;
+                margin: -2px;
+                position: relative;
+                img{
+                    width: 250px;
+                    height: 200px;
+                }
+                span{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top:0;
+                    left:0;
+                    background-color: #fff;
+                    border-top: 2px solid $mainColor;
+                    display: none;
+                    cursor: pointer;
+                    .icons{
+                        i{
+                            padding: 10px;
+                            border: 1px solid $mainColor;
+                            border-radius: 50%;
+                            color: $mainColor;
+                            margin-top: 30px;
+                        }
+                    }
+                    h4{
+                        color: $mainColor;
+                        font-size: 20px;
+                        text-transform: capitalize;
+                    }
+                    p{
+                        color: #888;
+                        font-size: 18px;
+                    }
+                }
+                &:hover{
+                    span{
+                        display: block;
+                    }
+                }
+            }
+            .hidden{
+                display: none;
+            }
+        }
+    }
+    button{
+        margin: auto;
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        padding: 15px 20px;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: capitalize;
+        color: #fff;
+        background-color: $mainColor;
+        border: 1px solid $mainColor;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        &:hover{
+            background-color: #146e5c;
+            border: 1px solid #146e5c;
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .container{
+        width: 400px;
+        section{
+            ul{
+                li{
+                    display: block;
+                    padding: 7px;
+                    width: 200px;
+                    margin: auto;
+                    text-align: center;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 575.98px) and (max-width: 767px) { 
+    .container{
+        width: 550px;
+        section{
+            ul{
+                li{
+                    padding: 7px;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 768px) { 
+    .container{
+        width: 750px;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 992px) {  
+    .container{
+        width: 970px;
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 1200px) {  
+    .container{
+        width:1170px;
+    }
+}

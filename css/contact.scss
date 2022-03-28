@@ -1,0 +1,353 @@
+@import url(variables.css);
+
+$mainColor: #20bc9d;
+$secondColor: #888;
+hr{
+    margin: 10px 0;
+    height: 0.1px;
+    width: 40%;
+    background-color: $mainColor;
+    border: none;
+}
+.hr-two{
+    transform: translateX(10px);
+    margin-top: 2px;
+}
+.conatiner{
+    width:1200px;
+}
+.contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+    .map{
+        width: 50%;
+        height: 100%;
+        position: relative;
+        p{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            iframe{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    section{
+        width: 50%;
+        margin: 0;
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            font-size: 40px;
+            color: #666;
+            letter-spacing: 1px ;
+            text-transform: uppercase;
+        }
+        form{
+            margin: 20px 0;
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            input{
+                width: 70%;
+                padding: 10px;
+                border-radius: 10px;
+                margin: 5px;
+                border: 1px solid #666;
+                outline: navajowhite;
+            }
+            .message{
+                height: 150px;
+            }
+            .submit{
+                width: 150px;
+                background-color: $mainColor;
+                color: #fff;
+                border: none;
+                font-weight: 800;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+img{
+    width: 110px;
+    height: 110px;
+}
+
+.footer{
+    background-color: #1D2C33;
+    display: block;
+    color: #676B6D;
+    margin: auto;
+    overflow: hidden;
+    hr{
+        margin: 10px 0;
+        height: 0.1px;
+        width: 90%;
+        background-color: $mainColor;
+        border: none;
+    }
+    section{
+        line-height: 1.3;
+        font-size: 18px;
+        display: block;
+    }
+    .one{
+        padding-right: 30px;
+        h1{
+            margin-top: 20px;
+            text-transform: uppercase;
+            color:#fff;
+            font-size: 40px;
+            span{
+                color: $mainColor
+            }
+        }
+        p:not(:first-of-type){
+            margin-top: 50px;
+            line-height: 1.5;
+        }
+    }
+    .two{
+        padding-left: 0;
+        h2{
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 22px;
+            margin-top: 35px;
+            margin-bottom: 30px;
+        }
+        .box{
+            display: flex;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 14px;
+            .image{
+                float: left;
+                margin-right: 10px;
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            .content{
+                float: right;
+                line-height: .9;
+                h4{
+                    margin-top: 0;
+                    margin-bottom: 1px;
+                    color: #fff;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    transition: all .2s ease-in-out;
+                    &:hover{
+                        color: $mainColor;
+                        cursor: pointer;
+                    }
+                }
+                .active{
+                    color: $mainColor;
+                    cursor: pointer;
+                }
+                p{
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+    .three{
+        padding-left: 30px;
+        h3{
+            color: #fff;
+            text-transform: uppercase;
+            margin-top: 35px;
+        }
+        .buttons{
+            padding: 10px 0;
+            button{
+                margin: 5px;
+                width: 70px;
+                text-align: center;
+                padding: 9px;
+                background-color: transparent;
+                border: 1px solid #676B6D;
+                color: #676B6D;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    background-color: $mainColor;
+                    border: 1px solid $mainColor;
+                    cursor: pointer;
+                    color: #fffc;
+                }
+            }
+            .active{
+                background-color: $mainColor;
+                border: 1px solid $mainColor;
+                cursor: pointer;
+                color: #fffc;
+            }
+        }
+        .email{
+            display: inline-block;
+            position: relative;
+            input{
+                background-color: #23353F;
+                border: none;
+                color: #fffc;
+                padding: 10px 20px;
+                &:focus{
+                    outline: none;
+                }
+            }
+            button{
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 20%;
+                background-color: #363E53;
+                border: none;
+                color: $mainColor;
+                font-weight: bold;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    color: #363E53;
+                    background-color: $mainColor;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .four{
+        padding-left: 30px;
+        h3{
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: 35px;
+        }
+        .images{
+            padding: 10px 0;
+            img{
+                width: 100px;
+                height: 100px;
+                margin: 10px 5px;
+            }
+        }
+    }
+    .root{
+        margin-top: -10px;
+        height: 68px;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #23353F;
+        text-align: center;
+        line-height: 50px;
+        text-transform: capitalize;
+        span{
+            color: $mainColor;
+            font-size: 25px;
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .footer{
+        .container{
+            width: 400px;
+            section{
+                width: 100%
+            }
+        }
+    }
+}
+@media (min-width: 575.98px) and (max-width: 767px) { 
+    .footer{
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        .container{
+            width: 550px;
+            section{
+                width: 100%
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    .contact-us{
+        flex-direction: column;
+        .map{
+            width: 100%;
+            height: 300px;
+            position: relative;
+            p{
+                height: 100%;
+                width: 100%;
+                position: relative;
+                iframe{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        section{
+            width: 100%;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 768px) { 
+    .footer{
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        .container{
+            width: 750px;
+            section{
+                width: 50%
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 992px) {  
+    .footer{
+        .container{
+            width: 970px;
+            section{
+                width: 25%
+            }
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 1200px) {  
+    .footer{
+        .container{
+            width:1170px;
+            section{
+                width: 25%
+            }
+        }
+    }
+}

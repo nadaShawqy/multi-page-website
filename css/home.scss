@@ -1,0 +1,260 @@
+@import url(variables.css);
+
+$mainColor: #20bc9d;
+$secondColor: #888;
+span{
+    color:$mainColor;
+}
+
+header{
+    background-image: url(../images//img2/image3.jpg);
+    background-size: cover;
+    height: 657px;
+    margin-bottom: 0;
+    color: #fff;
+    overflow: hidden;
+    .overlay{
+        background: rgba(49, 55, 61, 0.6);
+        nav{
+            height: 90px;
+            background: rgba(49, 55, 61, 0.9);
+            margin-top: -20px;
+            padding-top: 25px;
+            font-size: 18px;
+            padding-right: 50px;
+            padding-left: 50px;
+            .logo{
+                float: left;
+                img{
+                    width: 200px;
+                    height: 60px
+                }
+            }
+            ul{
+                display: flex;
+                float: right;
+                a{
+                    text-decoration: none;
+                    li{
+                        text-transform: uppercase;
+                        list-style: none;
+                        padding-bottom: 19px;
+                        padding-top: 5px;
+                        margin-right: 15px;
+                        color: #fff;
+                        cursor: pointer;
+                        transition: all .2s ease-in-out;
+                        &:hover{
+                            color: $mainColor;
+                            border-bottom: 2px solid $mainColor;
+                        }
+                    }
+                    .active{
+                        color: $mainColor;
+                        border-bottom: 2px solid $mainColor;
+                    }
+                }
+            }
+            .fa-bars{
+                float: right;
+                line-height: 70px;
+                margin-right: 20px;
+                cursor: pointer;
+                display: none;
+            }
+        }
+        .nav-r{
+            position: absolute;
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            overflow: hidden;
+            height: 90%;
+            background-color: #1C2A33;
+            transition: all 1s ease-in-out;
+            ul{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    li{
+                        text-align: center;
+                        line-height: 2.1;
+                        margin: auto;
+                        width: 150px;
+                        font-size: 26px;
+                        text-transform: capitalize;
+                        color: #fff;
+                        &:hover{
+                            border: 1px solid #fff;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .show{
+            right:0;
+        }
+        
+        
+        .content{
+            margin: auto;
+            margin-top: 200px;
+            text-align: center;
+            h3{
+                font-size: 25px;
+                text-transform: uppercase;
+                margin-bottom: 40px;
+            }
+            h1{
+                margin-top: -10px;
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 30px;
+                color: #AEAEAE;
+            }
+            .buttons{
+                margin-top: 50px;
+                button{
+                    padding: 10px 30px;
+                    background-color: $mainColor;
+                    color: #fff;
+                    border: none;
+                    border-top: 3px solid #fff;
+                    border-radius: 10px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    transition: all .3s ease-in-out;
+                    text-transform: uppercase;
+                    &:hover{
+                        background-color: #fff;
+                        color: $mainColor;
+                        border-top: 3px solid $mainColor;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .boxes{
+        margin-bottom: 0;
+        position: absolute;
+        right:0;
+        bottom: 0;
+        background-color: #AEAEAE;
+        overflow: hidden;
+        width: 100%;
+        .box{
+            text-align: center;
+            margin-bottom: -210px;
+            padding:  30px;
+            width: 25%;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+            &:hover{
+                margin-bottom: 0;
+            }
+            p{
+                font-size: 25px;
+            }
+        }
+        .one, .three{
+            background-color: #1C2A33;
+            color: $mainColor;
+            border-top: 5px solid $mainColor;
+        }
+        .two, .four{
+            background-color: $mainColor;
+            color: #fff;
+            border-top: 5px solid #1C2A33;
+        }
+    }
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    header{
+        .overlay{
+            overflow: hidden;
+            nav{
+                ul{
+                    display: none;
+                }
+                .fa-bars{
+                    display: block;
+                }
+            }
+            .content{
+                h3{
+                    font-size: 20px;
+                }
+                h1{
+                    font-size: 25px;
+                }
+            }
+        }
+        .boxes{
+            .box{
+                width: 25%;
+                img{
+                    width: 50px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 575.98px) and (max-width: 767px) { 
+    header{
+        .overlay{
+            overflow: hidden;
+            nav{
+                ul{
+                    display: none;
+                }
+                .fa-bars{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 768px) { 
+    header{
+        .overlay{
+            overflow: hidden;
+            nav{
+                ul{
+                    display: none;
+                }
+                .fa-bars{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 1114px) {  
+    header{
+        .overlay{
+            nav{
+                ul{
+                    display: flex;
+                }
+                .fa-bars{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+

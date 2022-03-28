@@ -1,0 +1,250 @@
+@import url(variables.css);
+
+$mainColor: #20bc9d;
+$secondColor: #888;
+span{
+    color:$mainColor;
+}
+h1{
+    margin-top: 40px;
+    text-align: center;
+    color: $secondColor;
+    text-transform: capitalize;
+}
+.hr-two{
+    margin-bottom: 40px;
+}
+.overlay{
+    height: 60%;
+    display: none;
+    .icon{
+        margin: auto;
+        margin-left: 80px;
+        margin-top: 90px;
+        width: 100px;
+        padding: 7px;
+        border-radius: 50%;
+        border: 1px solid $mainColor;
+        text-align: center;
+        i{
+            padding: 15px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background-color: #fff;
+            color: $mainColor;
+            width: 80px;
+        }
+    }
+}
+.our-team{
+    margin: auto;
+    .container{
+        .eng{
+            width:263px;
+            height:400px;
+            background-color: #2D4A5A;
+            position: relative;
+            margin-left: 1.5%;
+            border-radius: 10px;
+            color: #fff;
+            transition:all .4s ease-in-out;
+            .image{
+                img{
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    height: 60%;
+                    border-radius: 10px;
+                    i{
+                        position: absolute;
+                        z-index: 22;
+                        margin: auto;
+                        top: 100px;
+                        left: 50px
+                    }
+                }
+            }
+            .description{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 40%;
+                margin-bottom: -6px;
+                h2{
+                    margin: 10px ;
+                }
+                p{
+                    margin: 10px ;
+                    font-size: 20px;
+                    color: $mainColor;
+                }
+                .socials{
+                    border-top: 1px solid #fff;
+                    margin-bottom: -10px;
+                    width: 263px;
+                    i{
+                        display: inline-block;
+                        padding: 20px 17px;
+                        border-left: 1px solid #fff;
+                    }
+                }
+            }
+            &:hover{
+                cursor: pointer;
+                background-color: $mainColor;
+                p{
+                    color: #2D4A5A;
+                }
+                .overlay{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.purchase{
+    display: block;
+    background-image: url(../images/img/theme.jpg);
+    background-size: cover;
+    color: #fff;
+    height:657px;
+    margin-top: 50px;
+    h1{
+        text-transform: uppercase;
+        color: #FFFFFC;
+        font-size: 40px;
+    }
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 30px;
+        color: $mainColor
+    }
+    .content{
+        margin-top: 50px;
+        .image{
+            img{
+                width: 800px;
+                height: 370px
+            }
+        }
+        .list{
+            ul{
+                line-height: 2;
+                li{
+                    list-style: none;
+                    font-size: 18px;
+                    color: #ddddd9;
+                    transition: all .2s ease-in-out;
+                    i{
+                        margin-right: 15px;
+                        color: $mainColor;
+                    }
+                    &:hover{
+                        transform: scale(1.1);
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+            button{
+                margin-left: 50px;
+                padding: 15px 30px;
+                color: #FFFFFC;
+                background-color: $mainColor;
+                border: none;
+                border-top: 3px solid #FFFFFC;
+                border-radius: 5px;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 15px;
+                margin-top: 10px;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    cursor: pointer;
+                    background-color: #FFFFFC;
+                    color: $mainColor;
+                    border-top: 3px solid $mainColor;
+                }
+            }
+        }
+    }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .container{
+        width: 400px;
+        .eng{
+            width: 100%;
+            margin-left: 2%;
+            margin-bottom: 30px;
+        }
+        .content{
+            margin-top: 50px;
+            .image{
+                img{
+                    display: none;
+                }
+            }
+            h1{
+                font-size: 30px;
+            }
+            h2{
+                font-size: 20px;
+            }
+            .list{
+                width: 100%;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+@media (min-width: 575.98px) and (max-width: 767px) { 
+    .container{
+        width: 550px;
+        .content{
+            margin-top: 50px;
+            .image{
+                img{
+                    display: none;
+                }
+            }
+            .list{
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 768px) { 
+    .container{
+        width: 750px;
+        .content{
+            margin-top: 50px;
+            
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 992px) {  
+    .container{
+        width: 970px;
+        .eng{
+            width: 50%;
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 1200px) {  
+    .container{
+        width:1170px;
+        .eng{
+            width: 25%;
+        }
+    }
+}
